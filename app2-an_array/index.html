@@ -1,9 +1,17 @@
-<html ng-app="arrayApp">
+<html ng-app="app">
 	<head>
 		<link rel="stylesheet" href="style.css"></link>
 	</head>
-	<body ng-controller="arrayController">
+	<body ng-controller="ctrl">
 	
+	<div ng-repeat='info in arrInfo' style='border: 1px solid #DDD; margin: 10px auto; padding: 10px; text-align: center; width: 300px;'>
+		<strong>{{info.name}}</strong> <br>
+		{{info.email}} <br>
+		{{info.dateEmployed}} <br>
+		{{info.phone}} <br>
+	</div>
+
+
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
 		<script src="app.js"></script>
 		<script src="controller.js"></script>

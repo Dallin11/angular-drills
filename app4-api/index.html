@@ -1,7 +1,16 @@
-<html ng-app="apiApp">
-	<body>
+<html ng-app="app">
+	<body ng-controller='ctrl'>
+
+
+<input type="number" ng-model='num' placeholder="pick a number...">
+<button ng-click="changeNum(num)">who is it?</button>
+{{data.name}}
+
+
+
+
 		
-				<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
 		<script src="app.js"></script>
 		<script src="controller.js"></script>
 		<script src="service.js"></script>
